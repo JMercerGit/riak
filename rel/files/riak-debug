@@ -124,11 +124,11 @@ Defaults: Get configs, logs, patches, riak commands, and system commands.
           Output in current directory to NODE_NAME-riak-debug.tar.gz or
           HOSTNAME-riak-debug.tar.gz if NODE_NAME cannot be found.
 
-Privacy Note: When the -c flag is set (included in the defaults) every file in
-              the specified in Riak's `platform_etc_dir` will be copied into the
+Privacy Note: When the -c flag is set (included in the defaults) every file
+              in Riak's `platform_etc_dir` will be copied into the
               generated debug archive with the exceptions noted above. If there
               are additional files that you wish to keep out of the archive, the
-              enviroment variable RIAK_EXCLUDE may be filled with a space
+              environment variable RIAK_EXCLUDE may be filled with a space
               separated list of file patterns that will be passed into a `find
               -name`. Any matches will be excluded from the generated archive.
               E.g. `RIAK_EXCLUDE="'*.key' mySecretFile.txt" riak-debug`
